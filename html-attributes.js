@@ -595,7 +595,7 @@ function propToAttr(prop) {
   return PROPS_TO_ATTRS[prop] || prop;
 }
 
-module.exports = {
+export default {
   isStandardAttribute: isStandardAttribute,
   propToAttr: propToAttr,
 };
