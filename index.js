@@ -1,5 +1,5 @@
-var ClassList = require('class-list')
-var htmlAttributes = require('./html-attributes');
+import ClassList from '../class-list/index.js'
+import htmlAttributes from './html-attributes'
 
 function Document() {}
 
@@ -394,7 +394,7 @@ defineParentNode(Comment.prototype)
 defineParentNode(Text.prototype)
 defineParentNode(Node.prototype)
 
-module.exports = {
+export default {
   Document: Document,
   Node: Node,
   Element: Element,
